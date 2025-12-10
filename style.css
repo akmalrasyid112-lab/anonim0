@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Tombol Start */
+#startBtn {
+    padding: 15px 35px;
+    font-size: 24px;
+    border: none;
+    border-radius: 12px;
+    background: #ff79d9;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 0 25px #ff5ccd;
+    transition: 0.3s;
+}
+#startBtn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 35px #ff5ccd;
+}
+
+/* Countdown */
+#countdown {
+    font-size: 130px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 30px #ff6ad5, 0 0 60px #ff6ad5, 0 0 100px #ff6ad5;
+    position: absolute;
+    top: 33%;
+    animation: pop 0.8s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.1); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Text animasi */
+#text {
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 12px #ff72d2;
+    position: absolute;
+    top: 55%;
+    opacity: 0;
+    animation: fadeWords 1s ease forwards;
+}
+
+@keyframes fadeWords {
+    0% { opacity: 0; transform: scale(0.3); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Hati */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    color: #ff6bc9;
+    animation: floatUp linear infinite;
+    opacity: 0.9;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0) translateX(0); opacity: 1; }
+    100% { transform: translateY(-120vh) translateX(40px); opacity: 0; }
+}
