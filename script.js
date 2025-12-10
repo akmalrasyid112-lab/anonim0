@@ -6,7 +6,7 @@ const music = document.getElementById("bgMusic");
 let count = 3;
 
 // Kata yang kamu mau muncul → hilang → ganti
-const words = ["lagi", "hibernasi", "ya?", "sesusah itu kah?" , "hope u ace it" , "take your time" , "I patient" , "no worries", "i can wait" ,];
+const words = ["lagi", "hibernasi", "ya?", "sesusah itu kah?" , "hope u ace it" , "take your time" , "no worries", "i can wait" ,];
 
 startBtn.onclick = () => {
     startBtn.style.display = "none";
